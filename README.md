@@ -759,9 +759,9 @@ body > h1:first-of-type:not(.heading) {
           gap: 5px; 
       }
       
-      .town-button, 
+      .coupon-button, 
       .nysa-feed-button, 
-      .news-button { 
+      .jobs-button { 
           display: flex; 
           align-items: center; 
           justify-content: center; 
@@ -776,15 +776,15 @@ body > h1:first-of-type:not(.heading) {
           height: 40px; 
       }
       
-      .town-button:hover, 
+      .coupon-button:hover, 
       .nysa-feed-button:hover, 
-      .news-button:hover { 
+      .jobs-button:hover { 
           background: rgba(255, 215, 0, 0.1); 
       }
       
-      .town-button i, 
+      .coupon-button i, 
       .nysa-feed-button i, 
-      .news-button i { 
+      .jobs-button i { 
           font-size: 18px; 
       }
       
@@ -808,14 +808,14 @@ body > h1:first-of-type:not(.heading) {
                         Nysa AI Assistant
                     </div>
                     <div class="header-button-group">
-                        <button class="town-button" id="townButton">
+                        <button class="coupon-button" id="couponButton">
                             <i class="fas fa-gift"></i>
                         </button>
                         <button class="nysa-feed-button" id="nysaFeedButton">
                           <i class="fas fa-image"></i>
                         </button>
-                                  <button class="news-button" id="newsButton">
-                          <i class="fas fa-newspaper"></i>
+                                  <button class="jobs-button" id="jobsButton">
+                                    <i class="fas fa-briefcase"></i>
                         </button>
                                           </div>
                 </div>
@@ -7267,13 +7267,6 @@ style.textContent = `
         padding-left:20px;
     }
 
-/* Tablet (769px to 1024px) */
-@media (min-width: 769px) and (max-width: 1024px) {
-    .welcome-message {
-        width: 30%; /* Adjust as needed for tablet */
-    }
-}
-
     .fade-out {
   animation: fadeOut 0.3s ease-out forwards;
     }
@@ -11922,214 +11915,149 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
-
-const newsData = [
-  // AI News
+  
+  
+const jobsData = [
+  // Tech Jobs
   {
-    category: "AI",
+    category: "Tech",
     details: {
-      title: "GPT-5 Release Date Leaked: What to Expect",
+      title: "Senior AI Engineer at OpenAI",
       image: "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2024/05/1200/675/OPENAI-CHATGPT.jpg?ve=1&tl=1",
-      description: "New leaks suggest GPT-5 will be released in Q4 2024 with multimodal capabilities surpassing human performance in many tasks.",
-      author: "Sarah Techson",
-      date: "May 15, 2024",
-      readTime: "4 min read",
+      description: "Work on cutting-edge AI models like GPT-5. Lead research team in developing next-generation language models.",
+      company: "OpenAI",
+      location: "San Francisco, CA (Hybrid)",
+      salary: "$220,000 - $350,000",
+      type: "Full-time",
+      posted: "May 15, 2024",
+      experience: "5+ years",
       content: `
-        <h2>The Future of AI is Here</h2>
-        <p>According to internal documents obtained by our sources, OpenAI is preparing to launch GPT-5 in the fourth quarter of 2024. This next-generation AI model is rumored to include:</p>
+        <h2>About the Role</h2>
+        <p>We're looking for an experienced AI Engineer to join our core research team. You'll be working directly on our next-generation models with responsibilities including:</p>
         <ul>
-          <li>Multimodal processing (text, images, audio, video)</li>
-          <li>Dramatically improved reasoning capabilities</li>
-          <li>Context windows exceeding 1 million tokens</li>
-          <li>Near-instant response times</li>
+          <li>Designing and implementing novel neural architectures</li>
+          <li>Optimizing large-scale training pipelines</li>
+          <li>Leading a team of 3-5 researchers</li>
+          <li>Publishing papers at top conferences</li>
         </ul>
-        <p>Industry experts predict this release will revolutionize how we interact with technology, potentially making current AI assistants obsolete overnight.</p>
-        <blockquote>"This isn't just an incremental improvement - it's a paradigm shift," says Dr. Alan Turington of MIT's AI Lab.</blockquote>
-        <p>The leaked documents also suggest OpenAI is working on specialized versions for healthcare, legal, and creative industries.</p>
-      `,
-      tags: ["Artificial Intelligence", "OpenAI", "GPT-5"],
-      source: "Tech Future Daily",
-      social: {
-        twitter: "https://twitter.com/techfuture",
-        facebook: "https://facebook.com/techfuture",
-        linkedin: "https://linkedin.com/company/techfuture"
-      },
-      related: [
-        { title: "How GPT-4 Changed Everything", url: "#" },
-        { title: "The Ethics of Superintelligent AI", url: "#" }
-      ]
-    }
-  },
-  {
-    category: "AI",
-    details: {
-      title: "Google's Gemini Outperforms Humans in Creative Writing",
-      image: "https://thewallet.com.pk/wp-content/uploads/2023/12/gemini.jpeg",
-      description: "In blind tests, 85% of readers preferred AI-generated stories over human-written ones, marking a milestone in creative AI.",
-      author: "Mark Digitalis",
-      date: "May 12, 2024",
-      readTime: "6 min read",
-      content: `
-        <h2>The Creative Singularity</h2>
-        <p>Google's Gemini AI has achieved what many thought impossible - surpassing human writers in creative storytelling. In a landmark study:</p>
-        <ul>
-          <li>500 participants read stories without knowing the author</li>
-          <li>85% preferred AI-generated content</li>
-          <li>AI stories were rated more original and engaging</li>
-        </ul>
-        <p>The implications for publishing, marketing, and entertainment are profound. Some key findings:</p>
+        
+        <h2>Requirements</h2>
         <table>
           <tr>
-            <th>Metric</th>
-            <th>Human</th>
-            <th>AI</th>
+            <th>Must Have</th>
+            <th>Nice to Have</th>
           </tr>
           <tr>
-            <td>Engagement Score</td>
-            <td>72%</td>
-            <td>89%</td>
+            <td>PhD in Computer Science or related</td>
+            <td>Publications at NeurIPS/ICML</td>
           </tr>
           <tr>
-            <td>Originality</td>
-            <td>68%</td>
-            <td>92%</td>
+            <td>Expertise in PyTorch/TensorFlow</td>
+            <td>Experience with RLHF</td>
+          </tr>
+          <tr>
+            <td>5+ years industry experience</td>
+            <td>Open source contributions</td>
           </tr>
         </table>
-        <p>While some authors express concern, others see opportunity. "This is just another tool," says bestselling author Jane Wordwright.</p>
+        
+        <h2>Benefits</h2>
+        <ul>
+          <li>Equity in a leading AI company</li>
+          <li>Unlimited PTO</li>
+          <li>Top-tier health insurance</li>
+          <li>$10k/year learning budget</li>
+        </ul>
       `,
-      tags: ["Google", "Gemini", "Creative AI"],
-      source: "Digital Creativity",
+      tags: ["Artificial Intelligence", "Machine Learning", "Python"],
+      applyUrl: "https://openai.com/careers",
       social: {
-        twitter: "https://twitter.com/digitalcreativity",
-        facebook: "https://facebook.com/digitalcreativity"
-      },
-      related: [
-        { title: "AI Wins Literary Prize", url: "#" },
-        { title: "The End of Human Writers?", url: "#" }
-      ]
+        linkedin: "https://linkedin.com/company/openai",
+        twitter: "https://twitter.com/openai"
+      }
     }
   },
   
-  // Gaming News
+  // Healthcare Jobs
   {
-    category: "Gaming",
+    category: "Healthcare",
     details: {
-      title: "GTA 6 Release Date Finally Announced",
-      image: "https://images.hdqwalls.com/download/aloy-from-horizon-forbidden-west-4k-8h-1600x900.jpg",
-      description: "After years of speculation, Rockstar confirms GTA 6 will launch November 17, 2025 with unprecedented scale and detail.",
-      author: "Alex Console",
-      date: "May 10, 2024",
-      readTime: "5 min read",
+      title: "Telemedicine Physician",
+      image: "https://www.healthcareitnews.com/sites/hitn/files/Telemedicine%20video%20visit.jpg",
+      description: "Provide remote care to patients via our telehealth platform. Flexible hours, full malpractice coverage.",
+      company: "Teladoc Health",
+      location: "Remote (USA)",
+      salary: "$180,000 - $250,000",
+      type: "Contract",
+      posted: "May 14, 2024",
+      experience: "Board Certified",
       content: `
-        <h2>The Most Ambitious Game Ever</h2>
-        <p>Rockstar Games has officially announced Grand Theft Auto VI will release on November 17, 2025. Key features revealed:</p>
+        <h2>Position Details</h2>
+        <p>Join our network of physicians delivering high-quality care through our telemedicine platform. This position offers:</p>
         <ul>
-          <li>Massive open world covering Vice City and new locations</li>
-          <li>First female protagonist in series history</li>
-          <li>Real-time weather and economic systems</li>
-          <li>Support for VR and next-gen consoles</li>
+          <li>100% remote work</li>
+          <li>Choose your own hours (minimum 20hrs/week)</li>
+          <li>No overhead or administrative work</li>
+          <li>Malpractice insurance included</li>
         </ul>
-        <p>The trailer, which broke YouTube records with 100M views in 24 hours, shows stunning visuals and hints at a storyline involving cryptocurrency heists.</p>
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/trailer" frameborder="0" allowfullscreen></iframe>
+        
+        <h2>Specialties Needed</h2>
+        <div class="specialties">
+          <span class="specialty">Primary Care</span>
+          <span class="specialty">Psychiatry</span>
+          <span class="specialty">Dermatology</span>
+          <span class="specialty">Pediatrics</span>
         </div>
-        <p>Pre-orders begin June 1st, with special editions including real-world collectibles. Analysts predict this will be the biggest entertainment launch in history.</p>
-      `,
-      tags: ["GTA 6", "Rockstar", "Open World"],
-      source: "GameSphere",
-      social: {
-        twitter: "https://twitter.com/gamesphere",
-        instagram: "https://instagram.com/gamesphere"
-      },
-      related: [
-        { title: "GTA 6 Trailer Breakdown", url: "#" },
-        { title: "History of GTA", url: "#" }
-      ]
-    }
-  },
-  
-  // Web3 News
-  {
-    category: "Web3",
-    details: {
-      title: "Ethereum 2.0 Cuts Energy Use by 99.95%",
-      image: "https://invezz.com/wp-content/uploads/2021/01/ether-coins.jpg",
-      description: "The long-awaited Ethereum merge successfully completes, transitioning to proof-of-stake and dramatically reducing environmental impact.",
-      author: "Crypto Max",
-      date: "May 8, 2024",
-      readTime: "7 min read",
-      content: `
-        <h2>A Greener Blockchain Future</h2>
-        <p>Ethereum has successfully completed its transition to proof-of-stake consensus, achieving what developers call "The Merge." The results:</p>
+        
+        <h2>Technology Requirements</h2>
         <ul>
-          <li>99.95% reduction in energy consumption</li>
-          <li>Faster transaction times</li>
-          <li>Increased security</li>
+          <li>Reliable high-speed internet</li>
+          <li>Dual monitors recommended</li>
+          <li>Quiet, private workspace</li>
         </ul>
-        <p>This technical milestone addresses one of cryptocurrency's biggest criticisms - its environmental impact. Before and after comparison:</p>
-        <table>
-          <tr>
-            <th>Metric</th>
-            <th>Pre-Merge</th>
-            <th>Post-Merge</th>
-          </tr>
-          <tr>
-            <td>Energy Use (annual)</td>
-            <td>112 TWh</td>
-            <td>0.056 TWh</td>
-          </tr>
-          <tr>
-            <td>Carbon Footprint</td>
-            <td>53M tons CO2</td>
-            <td>26,500 tons CO2</td>
-          </tr>
-        </table>
-        <p>"This proves blockchain can be sustainable," says Ethereum founder Vitalik Buterin. The upgrade also paves the way for future scalability improvements.</p>
       `,
-      tags: ["Ethereum", "Blockchain", "Crypto"],
-      source: "Decentralized Times",
+      tags: ["Remote", "Telehealth", "Physician"],
+      applyUrl: "https://teladoc.com/careers",
       social: {
-        twitter: "https://twitter.com/decentralized",
-        telegram: "https://t.me/decentralized"
-      },
-      related: [
-        { title: "What Proof-of-Stake Means for Investors", url: "#" },
-        { title: "Next Steps for Ethereum", url: "#" }
-      ]
+        linkedin: "https://linkedin.com/company/teladoc-health"
+      }
     }
   },
-  
-  // Add more news articles as needed
+  // More jobs...
 ];
 
-// Function to show the news overlay
-function showNewsOverlay() {
-  let overlay = document.getElementById('newsOverlay');
+function showJobsOverlay() {
+  let overlay = document.getElementById('jobsOverlay');
   if (!overlay) {
     overlay = document.createElement('div');
-    overlay.id = 'newsOverlay';
-    overlay.className = 'news-overlay';
+    overlay.id = 'jobsOverlay';
+    overlay.className = 'jobs-overlay';
     document.body.appendChild(overlay);
   }
 
-  const categories = ['All', ...new Set(newsData.map(article => article.category))];
+  const categories = ['All', ...new Set(jobsData.map(job => job.category))];
 
   overlay.innerHTML = `
-    <div class="news-content">
-      <div class="news-header">
-        <h2>Nysa News</h2>
-        <button class="close-news" onclick="hideNewsOverlay()">
-          <i class="fas fa-times"></i>
-        </button>
+    <div class="jobs-content">
+      <div class="jobs-header">
+        <h2>Nysa Careers</h2>
+        <div class="header-actions">
+          <button class="toggle-filters" onclick="toggleAdvancedFilters()">
+            <i class="fas fa-sliders-h"></i>
+          </button>
+          <button class="close-jobs" onclick="hideJobsOverlay()">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
       </div>
       
-      <div class="news-filter-container">
-        <div class="news-filter-buttons">
+      <div class="jobs-filter-container">
+        <div class="jobs-filter-buttons">
           ${categories.map(category => `
             <button 
               class="filter-button ${category === 'All' ? 'active' : ''}" 
               data-category="${category}" 
-              onclick="filterNews('${category}')"
+              onclick="filterJobs('${category}')"
             >
               ${category}
             </button>
@@ -12137,27 +12065,65 @@ function showNewsOverlay() {
         </div>
       </div>
 
-      <div class="news-grid" id="newsGrid">
-        ${renderNewsCards(newsData)}
+      <div class="jobs-grid" id="jobsGrid">
+        ${renderJobsCards(jobsData)}
       </div>
     </div>
 
-    <div class="news-search-container">
+    <div class="jobs-search-container">
       <div class="input-container">
-        <input type="text" id="newsSearchInput" placeholder="Search for news, topics, or authors..." />
-        <button class="voice-search" id="newsVoiceSearchButton">
+        <input type="text" id="jobsSearchInput" placeholder="Search for jobs, companies, or locations..." />
+        <button class="voice-search" id="jobsVoiceSearchButton">
           <i class="fas fa-microphone"></i>
         </button>
       </div>
     </div>
+    
+    <div class="advanced-filters" id="advancedFilters">
+      <div class="filter-section">
+        <h4>Job Type</h4>
+        <div class="filter-options">
+          <label><input type="checkbox" name="job-type" value="Full-time" checked> Full-time</label>
+          <label><input type="checkbox" name="job-type" value="Part-time" checked> Part-time</label>
+          <label><input type="checkbox" name="job-type" value="Contract" checked> Contract</label>
+          <label><input type="checkbox" name="job-type" value="Internship" checked> Internship</label>
+        </div>
+      </div>
+      
+      <div class="filter-section">
+        <h4>Experience Level</h4>
+        <div class="filter-options">
+          <label><input type="checkbox" name="experience" value="Entry Level" checked> Entry Level</label>
+          <label><input type="checkbox" name="experience" value="Mid Level" checked> Mid Level</label>
+          <label><input type="checkbox" name="experience" value="Senior Level" checked> Senior Level</label>
+          <label><input type="checkbox" name="experience" value="Executive" checked> Executive</label>
+        </div>
+      </div>
+      
+      <div class="filter-section">
+        <h4>Salary Range</h4>
+        <div class="salary-range">
+          <input type="range" min="0" max="500000" value="0" step="10000" id="salaryMin">
+          <input type="range" min="0" max="500000" value="500000" step="10000" id="salaryMax">
+          <div class="salary-values">
+            <span id="minSalaryValue">$0</span> - <span id="maxSalaryValue">$500k+</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="filter-actions">
+        <button class="apply-filters" onclick="applyAdvancedFilters()">Apply Filters</button>
+        <button class="reset-filters" onclick="resetFilters()">Reset</button>
+      </div>
+    </div>
   `;
 
-  const searchInput = document.getElementById('newsSearchInput');
-  const newsGrid = document.getElementById('newsGrid');
+  const searchInput = document.getElementById('jobsSearchInput');
+  const jobsGrid = document.getElementById('jobsGrid');
   const filterButtons = document.querySelectorAll('.filter-button');
 
   const debouncedSearch = debounce((query) => {
-    performNewsSearch(newsData, query, newsGrid, filterButtons, renderNewsCards);
+    performJobsSearch(jobsData, query, jobsGrid, filterButtons, renderJobsCards);
   }, 300);
 
   searchInput.addEventListener('input', (e) => {
@@ -12166,19 +12132,33 @@ function showNewsOverlay() {
 
   searchInput.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') {
-      performNewsSearch(newsData, searchInput.value, newsGrid, filterButtons, renderNewsCards);
+      performJobsSearch(jobsData, searchInput.value, jobsGrid, filterButtons, renderJobsCards);
     }
   });
 
-  initializeNewsVoiceSearch(searchInput, (query) => {
-    performNewsSearch(newsData, query, newsGrid, filterButtons, renderNewsCards);
+  initializeJobsVoiceSearch(searchInput, (query) => {
+    performJobsSearch(jobsData, query, jobsGrid, filterButtons, renderJobsCards);
+  });
+
+  // Initialize salary range display
+  const salaryMin = document.getElementById('salaryMin');
+  const salaryMax = document.getElementById('salaryMax');
+  const minSalaryValue = document.getElementById('minSalaryValue');
+  const maxSalaryValue = document.getElementById('maxSalaryValue');
+
+  salaryMin.addEventListener('input', () => {
+    minSalaryValue.textContent = formatSalary(salaryMin.value);
+  });
+
+  salaryMax.addEventListener('input', () => {
+    maxSalaryValue.textContent = formatSalary(salaryMax.value);
   });
 
   setTimeout(() => overlay.classList.add('active'), 10);
 
   const style = document.createElement('style');
   style.textContent = `
-    .news-overlay {
+    .jobs-overlay {
       position: fixed;
       top: 60px;
       left: 0;
@@ -12197,16 +12177,16 @@ function showNewsOverlay() {
       -ms-overflow-style: none;
     }
 
-    .news-overlay::-webkit-scrollbar {
+    .jobs-overlay::-webkit-scrollbar {
       display: none;
     }
 
-    .news-overlay.active {
+    .jobs-overlay.active {
       opacity: 1;
       visibility: visible;
     }
 
-    .news-content {
+    .jobs-content {
       flex: 1;
       width: 100%;
       max-width: 100%;
@@ -12215,7 +12195,7 @@ function showNewsOverlay() {
       position: relative;
     }
 
-    .news-header {
+    .jobs-header {
       padding: 16px 24px;
       background: rgba(26, 26, 31, 0.95);
       position: fixed;
@@ -12233,7 +12213,7 @@ function showNewsOverlay() {
       box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     }
 
-    .news-header h2 {
+    .jobs-header h2 {
       color: var(--primary-color);
       margin: 0;
       font-size: 1.75em;
@@ -12244,7 +12224,1795 @@ function showNewsOverlay() {
       gap: 12px;
     }
 
-    .news-header h2::before {
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .jobs-header h2::before {
+      content: '';
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      background: var(--primary-color);
+      mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 14.66V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h5.34'%3E%3C/path%3E%3Cpolygon points='18 2 22 6 12 16 8 16 8 12 18 2'%3E%3C/polygon%3E%3C/svg%3E");
+      mask-repeat: no-repeat;
+      mask-position: center;
+      mask-size: contain;
+    }
+
+    .close-jobs {
+      background: rgba(255, 255, 255, 0.1);
+      border: none;
+      color: white;
+      font-size: 1em;
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+    }
+
+    .close-jobs:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transform: scale(1.05);
+    }
+
+    .close-jobs:active {
+      transform: scale(0.95);
+    }
+
+    .jobs-filter-container {
+      position: fixed;
+      top: 72px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      z-index: 10;
+      background: #1a1a1f;
+      padding: 12px 0;
+      box-sizing: border-box;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      border-bottom: 1px solid rgba(255, 215, 0, 0.1);
+    }
+
+    .jobs-filter-container::-webkit-scrollbar {
+      display: none;
+    }
+
+    .jobs-filter-buttons {
+      display: inline-flex;
+      padding: 0 16px;
+      gap: 8px;
+      white-space: nowrap;
+    }
+
+    .filter-button {
+      font-family: poppins;
+      flex-shrink: 0;
+      background: rgba(255, 215, 0, 0.1);
+      color: rgba(255, 255, 255, 0.9);
+      border: 1px solid rgba(255, 215, 0, 0.2);
+      padding: 10px 20px;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 500;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin: 0;
+    }
+
+    .filter-button:hover {
+      background: rgba(255, 215, 0, 0.15);
+      transform: scale(1.03);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .filter-button.active {
+      background: var(--primary-color);
+      color: #000;
+      font-weight: 600;
+      border-color: var(--primary-color);
+      box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3);
+    }
+
+    /* Add some space at the end for better scrolling */
+    .jobs-filter-buttons::after {
+      content: '';
+      display: block;
+      min-width: 16px;
+      height: 1px;
+    }
+
+  .toggle-filters {
+  background: rgba(255, 215, 0, 0.1);
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  color: var(--primary-color);
+  font-size: 0.9em;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+}
+
+.toggle-filters:hover {
+  background: rgba(255, 215, 0, 0.15);
+  transform: translateY(-1px);
+}
+
+.toggle-filters:active {
+  transform: translateY(0);
+}
+
+    .jobs-grid {
+      margin-top: 70px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+      gap: 20px;
+      animation: fadeInUp 0.5s ease-out;
+      padding-bottom: 140px;
+      width: 100%;
+    }
+
+    .jobs-card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 16px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      cursor: pointer;
+    }
+
+    .jobs-card:hover {
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      border-color: rgba(255, 215, 0, 0.3);
+      transform: translateY(-5px);
+    }
+
+    .jobs-card-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .jobs-card-content {
+      padding: 20px;
+    }
+
+    .jobs-card-category {
+      display: inline-block;
+      background: rgba(255, 215, 0, 0.1);
+      color: var(--primary-color);
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.8em;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .jobs-card-title {
+      font-size: 1.3em;
+      font-weight: 700;
+      margin: 0 0 10px 0;
+      color: white;
+      line-height: 1.3;
+    }
+
+    .jobs-card-company {
+      font-size: 1.1em;
+      color: rgba(255, 255, 255, 0.9);
+      margin: 0 0 10px 0;
+    }
+
+    .jobs-card-location {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.9em;
+      color: rgba(255, 255, 255, 0.7);
+      margin-bottom: 10px;
+    }
+
+    .jobs-card-salary {
+      font-size: 1em;
+      color: var(--primary-color);
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    .jobs-card-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.85em;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .jobs-card-type {
+      background: rgba(255, 215, 0, 0.1);
+      color: var(--primary-color);
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 0.8em;
+    }
+
+    .jobs-card-date {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .jobs-search-container {
+      position: fixed;
+      bottom: 0px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      max-width: 100%;
+      z-index: 1000;
+      padding: 20px;
+      background: #1a1a1f;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: center;
+      box-sizing: border-box;
+    }
+
+    .input-container {
+      flex: 1;
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      max-width: 800px;
+    }
+
+    #jobsSearchInput {
+      flex: 1;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 215, 0, 0.2);
+      border-radius: 12px;
+      padding: 12px 50px 12px 20px;
+      color: #fff;
+      font-size: 0.95em;
+      width: 100%;
+      transition: border-color 0.3s ease;
+    }
+
+    #jobsSearchInput:focus {
+      border-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .voice-search {
+      position: absolute;
+      right: 10px;
+      background: none;
+      border: none;
+      color: var(--primary-color);
+      cursor: pointer;
+      padding: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .voice-search:hover {
+      opacity: 0.8;
+    }
+
+    .voice-search.active {
+      color: #ffd700;
+      animation: pulse 1.5s infinite;
+    }
+
+    .voice-search i { 
+      font-size: 1.5em; 
+    }
+
+    .advanced-filters {
+      position: fixed;
+      bottom: 100px;
+      left: 0;
+      right: 0;
+      background: #1a1a1f;
+      padding: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      transform: translateY(100%);
+      transition: transform 0.3s ease;
+      z-index: 999;
+      max-height: 60vh;
+      overflow-y: auto;
+    }
+
+    .advanced-filters.active {
+      transform: translateY(0);
+    }
+
+    .filter-section {
+      margin-bottom: 20px;
+    }
+
+    .filter-section h4 {
+      color: white;
+      margin-bottom: 12px;
+      font-size: 1em;
+    }
+
+    .filter-options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .filter-options label {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 0.9em;
+      cursor: pointer;
+    }
+
+    .filter-options input[type="checkbox"] {
+      accent-color: var(--primary-color);
+    }
+
+    .salary-range {
+      padding: 0 10px;
+    }
+
+    .salary-range input[type="range"] {
+      width: 100%;
+      margin: 10px 0;
+      -webkit-appearance: none;
+      height: 4px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 2px;
+    }
+
+    .salary-range input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 16px;
+      height: 16px;
+      background: var(--primary-color);
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .salary-values {
+      display: flex;
+      justify-content: space-between;
+      color: white;
+      font-size: 0.9em;
+    }
+
+    .filter-actions {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .apply-filters, .reset-filters {
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .apply-filters {
+      background: var(--primary-color);
+      color: #000;
+      border: none;
+    }
+
+    .apply-filters:hover {
+      opacity: 0.9;
+    }
+
+    .reset-filters {
+      background: transparent;
+      color: var(--primary-color);
+      border: 1px solid var(--primary-color);
+    }
+
+    .reset-filters:hover {
+      background: rgba(255, 215, 0, 0.1);
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .jobs-grid {
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+        margin-top: 80px;
+        gap: 15px;
+      }
+
+      .jobs-card {
+        width: 100%;
+        margin: 0;
+      }
+
+      .jobs-card-image {
+        height: 180px;
+      }
+
+      .jobs-content {
+        padding: 10px 0;
+        padding-bottom: 200px;
+      }
+
+      #jobsSearchInput {
+        padding: 20px 20px;
+      }
+      
+      .advanced-filters {
+        padding: 15px;
+      }
+      
+      .filter-options {
+        gap: 8px;
+      }
+    }
+
+    @media (min-width: 769px) {
+      .jobs-search-container {
+        padding: 24px;
+        bottom: 0px;
+      }
+
+      .input-container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      #jobsSearchInput {
+        height: 80px;
+        font-size: 1.05rem;
+        padding: 0 50px 0 24px;
+        border-radius: 16px;
+      }
+
+      .voice-search {
+        width: 50px;
+        height: 50px;
+        right: 8px;
+      }
+
+      .voice-search i {
+        font-size: 2.1em;
+      }
+
+      .jobs-grid {
+        padding-bottom: 180px;
+      }
+      
+      .advanced-filters {
+        padding: 30px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+      }
+      
+      .filter-actions {
+        grid-column: 1 / -1;
+      }
+    }
+  `;
+  document.head.appendChild(style);
+}
+
+function renderJobsCards(filteredData) {
+  return filteredData.map(job => `
+    <div class="jobs-card" onclick="openJobDetail('${job.category}', '${job.details.title.replace(/'/g, "\\'")}')">
+      <img src="${job.details.image}" alt="${job.details.title}" class="jobs-card-image">
+      <div class="jobs-card-content">
+        <span class="jobs-card-category">${job.category}</span>
+        <h3 class="jobs-card-title">${job.details.title}</h3>
+        <p class="jobs-card-company">${job.details.company}</p>
+        <div class="jobs-card-location">
+          <i class="fas fa-map-marker-alt"></i> ${job.details.location}
+        </div>
+        <p class="jobs-card-salary">${job.details.salary}</p>
+        <div class="jobs-card-meta">
+          <span class="jobs-card-type">${job.details.type}</span>
+          <span class="jobs-card-date">
+            <i class="far fa-calendar-alt"></i> ${job.details.posted}
+          </span>
+        </div>
+      </div>
+    </div>
+  `).join('');
+}
+
+function openJobDetail(category, title) {
+  const job = jobsData.find(item => 
+    item.category === category && item.details.title === title.replace(/\\'/g, "'")
+  );
+  
+  if (!job) return;
+
+  const jobPage = document.createElement('div');
+  jobPage.className = 'job-detail-page';
+  jobPage.innerHTML = `
+    <div class="job-detail-header">
+      <button class="back-button" onclick="closeJobDetail()">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+      <button class="share-button" onclick="shareJob('${job.details.title.replace(/'/g, "\\'")}')">
+        <i class="fas fa-share"></i>
+      </button>
+    </div>
+    
+    <div class="job-hero">
+      <div class="hero-gradient"></div>
+      <img src="${job.details.image}" alt="${job.details.title}" class="hero-image">
+      <div class="hero-content">
+        <div class="job-category">${job.category}</div>
+        <h1>${job.details.title}</h1>
+        <div class="job-company">${job.details.company}</div>
+        <div class="job-meta-container">
+          <div class="job-meta-scroll">
+            <div class="job-meta">
+              <div class="meta-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>${job.details.location}</span>
+              </div>
+              <div class="meta-item">
+                <i class="fas fa-dollar-sign"></i>
+                <span>${job.details.salary}</span>
+              </div>
+              <div class="meta-item">
+                <i class="fas fa-briefcase"></i>
+                <span>${job.details.type}</span>
+              </div>
+              <div class="meta-item">
+                <i class="fas fa-clock"></i>
+                <span>Posted ${job.details.posted}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="job-content-container">
+      <div class="job-content">
+        ${job.details.content}
+        
+        <div class="job-actions">
+          <a href="${job.details.applyUrl}" target="_blank" class="apply-button">Apply Now</a>
+        </div>
+      </div>
+      
+      <div class="job-sidebar">
+        <div class="sidebar-section">
+          <h3>Job Details</h3>
+          <div class="detail-item">
+            <i class="fas fa-calendar-alt"></i>
+            <div>
+              <span class="detail-label">Posted Date</span>
+              <span class="detail-value">${job.details.posted}</span>
+            </div>
+          </div>
+          <div class="detail-item">
+            <i class="fas fa-briefcase"></i>
+            <div>
+              <span class="detail-label">Job Type</span>
+              <span class="detail-value">${job.details.type}</span>
+            </div>
+          </div>
+          <div class="detail-item">
+            <i class="fas fa-dollar-sign"></i>
+            <div>
+              <span class="detail-label">Salary</span>
+              <span class="detail-value">${job.details.salary}</span>
+            </div>
+          </div>
+          <div class="detail-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <span class="detail-label">Location</span>
+              <span class="detail-value">${job.details.location}</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="sidebar-section">
+          <h3>Tags</h3>
+          <div class="tags-container">
+            ${job.details.tags.map(tag => `
+              <span class="tag">${tag}</span>
+            `).join('')}
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+
+  document.body.appendChild(jobPage);
+  addJobDetailStyles();
+  scrollToTop();
+  
+  // Add scroll effect for header
+  const header = document.querySelector('.job-detail-header');
+  const hero = document.querySelector('.job-hero');
+  
+  if (header && hero) {
+    const heroHeight = hero.offsetHeight;
+    
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > heroHeight - 100) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  }
+}
+
+function addJobDetailStyles() {
+  const style = document.createElement('style');
+  style.textContent = `
+    .job-detail-page {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #1a1a1f;
+      z-index: 2000;
+      overflow-y: auto;
+      color: #333;
+      font-family: poppins;
+      line-height: 1.6;
+    }
+
+    .job-detail-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 15px 20px;
+      background: transparent;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease;
+    }
+
+    .job-detail-header.scrolled {
+      background: rgba(255, 255, 255, 0.98);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .back-button {
+      background: rgba(0, 0, 0, 0.7);
+      border: none;
+      color: white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+    }
+
+    .job-detail-header.scrolled .back-button {
+      background: rgba(0, 0, 0, 0.05);
+      color: #333;
+    }
+
+    .back-button:hover {
+      transform: translateX(-3px);
+    }
+
+    .share-button {
+      background: rgba(0, 0, 0, 0.7);
+      border: none;
+      color: white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+    }
+
+    .job-detail-header.scrolled .share-button {
+      background: rgba(0, 0, 0, 0.05);
+      color: #333;
+    }
+
+    .share-button:hover {
+      transform: scale(1.1);
+    }
+
+    .job-hero {
+      position: relative;
+      width: 100%;
+      height: 55vh;
+      min-height: 350px;
+      max-height: 600px;
+      overflow: hidden;
+    }
+    
+    .hero-gradient {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 70%;
+      background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, transparent 100%);
+      z-index: 2;
+    }
+    
+    .hero-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 1;
+    }
+    
+    .hero-content {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 25px 20px;
+      z-index: 3;
+      color: white;
+      max-width: 1200px;
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
+    
+    .job-category {
+      display: inline-block;
+      background: rgba(255, 215, 0, 0.9);
+      color: #111;
+      padding: 6px 15px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 15px;
+    }
+    
+    .hero-content h1 {
+      font-size: 2em;
+      font-weight: 800;
+      margin: 0 0 10px 0;
+      line-height: 1.2;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+    
+    .job-company {
+      font-size: 1.2em;
+      margin: 0 0 15px 0;
+      color: rgba(255,255,255,0.9);
+    }
+    
+    .job-meta-container {
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      padding-bottom: 10px;
+    }
+    
+    .job-meta-scroll {
+      display: inline-block;
+      min-width: 100%;
+    }
+    
+    .job-meta {
+      display: inline-flex;
+      gap: 15px;
+      padding: 8px 0;
+    }
+    
+    .meta-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.9em;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 8px 16px;
+      border-radius: 20px;
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      white-space: nowrap;
+      flex-shrink: 0;
+      border: 1px solid rgba(255, 215, 0, 0.2);
+    }
+    
+    .meta-item i {
+      color: var(--primary-color);
+      font-size: 0.9em;
+    }
+    
+    /* Hide scrollbar but keep functionality */
+    .job-meta-container::-webkit-scrollbar {
+      display: none;
+    }
+    
+    /* Mobile Responsiveness */
+    @media (max-width: 768px) {
+      .job-hero {
+        height: 50vh;
+        min-height: 300px;
+      }
+      
+      .hero-content {
+        padding: 20px 15px;
+      }
+      
+      .hero-content h1 {
+        font-size: 1.7em;
+      }
+      
+      .job-company {
+        font-size: 1.1em;
+        margin-bottom: 12px;
+      }
+      
+      .job-meta {
+        gap: 10px;
+      }
+      
+      .meta-item {
+        font-size: 0.85em;
+        padding: 6px 12px;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .job-hero {
+        height: 45vh;
+        min-height: 250px;
+      }
+      
+      .hero-content h1 {
+        font-size: 1.5em;
+      }
+      
+      .job-category {
+        font-size: 0.75em;
+        padding: 4px 12px;
+        margin-bottom: 10px;
+      }
+      
+      .job-company {
+        font-size: 1em;
+      }
+      
+      .meta-item {
+        font-size: 0.8em;
+        padding: 5px 10px;
+      }
+      
+      .hero-gradient {
+        height: 80%;
+      }
+    }
+    
+    @media (max-width: 360px) {
+      .job-hero {
+        height: 40vh;
+        min-height: 220px;
+      }
+      
+      .hero-content h1 {
+        font-size: 1.4em;
+      }
+    }
+
+    .job-content-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      position: relative;
+      background: #1a1a1f;
+      border-radius: 30px 30px 0 0;
+      margin-top: -30px;
+      z-index: 5;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 30px;
+    }
+
+    .job-content {
+      margin: 0px;
+      font-size: 1.1em;
+      line-height: 1.8;
+      color: #fff;
+    }
+
+    .job-content h2 {
+      font-size: 1.6em;
+      margin: 1.5em 0 0.8em;
+      margin-top: 0px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .job-content p {
+      margin-bottom: 1.5em;
+    }
+
+    .job-content ul, .job-content ol {
+      margin-bottom: 1.5em;
+      padding-left: 1.5em;
+    }
+
+    .job-content li {
+      margin-bottom: 0.5em;
+    }
+
+    .job-content blockquote {
+      border-left: 4px solid #ffd700;
+      padding: 15px 20px;
+      margin: 2em 0;
+      background: rgba(255, 255, 255, 0.05);
+      font-style: italic;
+      color: #fff;
+    }
+
+    .job-content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 2em 0;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    }
+
+    .job-content th, .job-content td {
+      padding: 12px 15px;
+      text-align: left;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .job-content th {
+      background: rgba(255, 215, 0, 0.1);
+      font-weight: 600;
+      color: #fff;
+    }
+
+    .job-content tr:hover {
+      background: rgba(255,255,255,0.05);
+    }
+
+    .job-actions {
+      margin-top: 60px;
+    }
+
+    .apply-button {
+      background: var(--primary-color);
+      color: #000;
+      padding: 15px 30px;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      display: inline-block;
+      text-align: center;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .apply-button:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+    }
+
+    .job-sidebar {
+      position: sticky;
+      top: 20px;
+      align-self: start;
+    }
+
+    .sidebar-section {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .sidebar-section h3 {
+      margin-top: 0;
+      margin-bottom: 20px;
+      color: #fff;
+      font-size: 1.3em;
+    }
+
+    .detail-item {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 15px;
+      align-items: center;
+    }
+
+    .detail-item i {
+      color: var(--primary-color);
+      font-size: 1.2em;
+      min-width: 20px;
+    }
+
+    .detail-label {
+      display: block;
+      font-size: 0.85em;
+      color: rgba(255,255,255,0.7);
+    }
+
+    .detail-value {
+      display: block;
+      font-weight: 500;
+      color: #fff;
+    }
+
+    .tags-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .tag {
+      background: rgba(255, 215, 0, 0.1);
+      color: var(--primary-color);
+      padding: 8px 15px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      transition: all 0.3s ease;
+    }
+
+    .tag:hover {
+      background: var(--primary-color);
+      color: #000;
+    }
+
+    .specialties, .topics, .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 15px 0;
+    }
+
+    .specialty, .topic, .skill {
+      background: rgba(255, 215, 0, 0.1);
+      color: var(--primary-color);
+      padding: 8px 15px;
+      border-radius: 20px;
+      font-size: 0.9em;
+    }
+
+    .metrics {
+      display: flex;
+      gap: 20px;
+      margin: 20px 0;
+      flex-wrap: wrap;
+    }
+
+    .metric {
+      text-align: center;
+    }
+
+    .metric-value {
+      display: block;
+      font-size: 1.8em;
+      font-weight: 700;
+      color: var(--primary-color);
+    }
+
+    .metric-label {
+      display: block;
+      font-size: 0.9em;
+      color: rgba(255,255,255,0.7);
+    }
+
+    /* Mobile Responsiveness */
+    @media (max-width: 768px) {      
+      .job-content-container {
+        padding: 30px 15px;
+        margin-top: -20px;
+        border-radius: 20px 20px 0 0;
+        grid-template-columns: 1fr;
+      }
+      
+      .job-content {
+        font-size: 1em;
+      }
+      
+      .job-content h2 {
+        font-size: 1.4em;
+      }
+      
+      .job-sidebar {
+        position: static;
+        margin-top: 30px;
+      }
+      
+      .sidebar-section {
+        padding: 15px;
+      }
+      
+      .detail-item {
+        gap: 10px;
+      }
+      
+      .apply-button {
+        padding: 15px 20px;
+      }
+    }
+
+    @media (max-width: 480px) {            
+      .job-content-container {
+        padding: 25px 10px;
+      }
+    }
+  `;
+  document.head.appendChild(style);
+}
+
+function closeJobDetail() {
+  const jobPage = document.querySelector('.job-detail-page');
+  if (jobPage) {
+    jobPage.remove();
+  }
+}
+
+function saveJob(title) {
+  // In a real app, this would save to user's account
+  alert(`Job "${title}" saved to your favorites!`);
+  
+  // Toggle save button state
+  const saveButtons = document.querySelectorAll('.save-button, .save-job-button');
+  saveButtons.forEach(button => {
+    button.innerHTML = button.innerHTML.includes('fa-bookmark') 
+      ? '<i class="fas fa-bookmark"></i> Saved' 
+      : '<i class="far fa-bookmark"></i> Save Job';
+  });
+}
+
+function shareJob(title) {
+  if (navigator.share) {
+    navigator.share({
+      title: title,
+      text: 'Check out this job opportunity!',
+      url: window.location.href,
+    }).catch(err => {
+      console.log('Error sharing:', err);
+    });
+  } else {
+    // Fallback for browsers that don't support Web Share API
+    const shareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(window.location.href)}`;
+    window.open(shareUrl, '_blank');
+  }
+}
+
+function openRelatedJob(title) {
+  // In a real app, this would open the related job
+  alert(`This would open the job: "${title}" in a real application.`);
+}
+
+function hideJobsOverlay() {
+  const overlay = document.getElementById('jobsOverlay');
+  if (overlay) {
+    overlay.classList.remove('active');
+    setTimeout(() => overlay.remove(), 300);
+  }
+}
+
+function filterJobs(category) {
+  const jobsGrid = document.getElementById('jobsGrid');
+  let filteredData = jobsData;
+
+  if (category !== 'All') {
+    filteredData = filteredData.filter(job => job.category === category);
+  }
+
+  jobsGrid.innerHTML = renderJobsCards(filteredData);
+
+  const filterButtons = document.querySelectorAll('.filter-button');
+  filterButtons.forEach(button => {
+    if (button.getAttribute('data-category') === category) {
+      button.classList.add('active');
+    } else {
+      button.classList.remove('active');
+    }
+  });
+}
+
+function performJobsSearch(data, query, gridElement, filterButtons, renderFunction) {
+  if (!query) {
+    // If no query, show all jobs
+    gridElement.innerHTML = renderFunction(data);
+    return;
+  }
+
+  const lowerCaseQuery = query.toLowerCase();
+  const filteredData = data.filter(job => {
+    return (
+      job.details.title.toLowerCase().includes(lowerCaseQuery) ||
+      job.details.company.toLowerCase().includes(lowerCaseQuery) ||
+      job.details.location.toLowerCase().includes(lowerCaseQuery) ||
+      job.category.toLowerCase().includes(lowerCaseQuery) ||
+      (job.details.tags && job.details.tags.some(tag => tag.toLowerCase().includes(lowerCaseQuery)))
+    );
+  });
+
+  gridElement.innerHTML = filteredData.length > 0 
+    ? renderFunction(filteredData)
+    : '<div class="no-results">No jobs found matching your search.</div>';
+}
+
+function initializeJobsVoiceSearch(inputElement, callback) {
+  const voiceButton = document.getElementById('jobsVoiceSearchButton');
+  if (!voiceButton) return;
+
+  let recognition;
+  try {
+    recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+    recognition.continuous = false;
+    recognition.interimResults = false;
+
+    voiceButton.addEventListener('click', () => {
+      if (voiceButton.classList.contains('active')) {
+        recognition.stop();
+        voiceButton.classList.remove('active');
+        return;
+      }
+
+      voiceButton.classList.add('active');
+      recognition.start();
+
+      recognition.onresult = (event) => {
+        const transcript = event.results[0][0].transcript;
+        inputElement.value = transcript;
+        if (callback) callback(transcript);
+        voiceButton.classList.remove('active');
+      };
+
+      recognition.onerror = (event) => {
+        console.error('Voice recognition error', event.error);
+        voiceButton.classList.remove('active');
+      };
+
+      recognition.onend = () => {
+        voiceButton.classList.remove('active');
+      };
+    });
+  } catch (e) {
+    console.error('Voice recognition not supported', e);
+    voiceButton.style.display = 'none';
+  }
+}
+
+function toggleAdvancedFilters() {
+  const filters = document.getElementById('advancedFilters');
+  filters.classList.toggle('active');
+}
+
+function applyAdvancedFilters() {
+  // Get all filter values
+  const jobTypeCheckboxes = document.querySelectorAll('input[name="job-type"]:checked');
+  const experienceCheckboxes = document.querySelectorAll('input[name="experience"]:checked');
+  const salaryMin = document.getElementById('salaryMin').value;
+  const salaryMax = document.getElementById('salaryMax').value;
+  
+  const selectedJobTypes = Array.from(jobTypeCheckboxes).map(cb => cb.value);
+  const selectedExperience = Array.from(experienceCheckboxes).map(cb => cb.value);
+  
+  // Filter jobs
+  let filteredJobs = jobsData.filter(job => {
+    // Job type filter
+    if (selectedJobTypes.length > 0 && !selectedJobTypes.includes(job.details.type)) {
+      return false;
+    }
+    
+    // Experience filter (simplified for demo)
+    if (selectedExperience.length > 0) {
+      const jobExp = job.details.experience.toLowerCase();
+      if (selectedExperience.some(exp => jobExp.includes(exp.toLowerCase()))) {
+        return true;
+      }
+      return false;
+    }
+    
+    // Salary filter (simplified for demo)
+    const salary = job.details.salary;
+    const numericSalary = extractNumberFromSalary(salary);
+    if (numericSalary) {
+      if (numericSalary < salaryMin || numericSalary > salaryMax) {
+        return false;
+      }
+    }
+    
+    return true;
+  });
+  
+  // Update grid
+  const jobsGrid = document.getElementById('jobsGrid');
+  jobsGrid.innerHTML = filteredJobs.length > 0 
+    ? renderJobsCards(filteredJobs)
+    : '<div class="no-results">No jobs match all your filters.</div>';
+  
+  // Close filters
+  toggleAdvancedFilters();
+}
+
+function resetFilters() {
+  // Reset checkboxes
+  document.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+    cb.checked = true;
+  });
+  
+  // Reset salary range
+  document.getElementById('salaryMin').value = 0;
+  document.getElementById('salaryMax').value = 500000;
+  document.getElementById('minSalaryValue').textContent = '$0';
+  document.getElementById('maxSalaryValue').textContent = '$500k+';
+  
+  // Reset grid
+  const jobsGrid = document.getElementById('jobsGrid');
+  jobsGrid.innerHTML = renderJobsCards(jobsData);
+}
+
+function extractNumberFromSalary(salaryText) {
+  // Simple extraction for demo - would need more robust parsing in real app
+  const match = salaryText.match(/\$([\d,]+)/);
+  if (match) {
+    return parseInt(match[1].replace(/,/g, ''));
+  }
+  return null;
+}
+
+function formatSalary(value) {
+  const num = parseInt(value);
+  if (num >= 100000) {
+    return `$${Math.floor(num/1000)}k+`;
+  }
+  return `$${num.toLocaleString()}`;
+}
+
+// Utility function for debouncing
+function debounce(func, wait) {
+  let timeout;
+  return function(...args) {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => func.apply(this, args), wait);
+  };
+}
+
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Get the jobs button element
+  const jobsButton = document.getElementById('jobsButton');
+  
+  // Add click event listener
+  if (jobsButton) {
+    jobsButton.addEventListener('click', function(e) {
+      e.preventDefault(); // Prevent default behavior if needed
+      showJobsOverlay(); // This opens the jobs feed
+    });
+  }
+});
+
+const couponData = [
+  // Food & Beverage
+  {
+    category: "Food & Beverage",
+    details: {
+      title: "Starbucks: Buy 1 Get 1 Free on All Frappuccinos",
+      image: "https://b.zmtcdn.com/data/pictures/chains/7/96507/9b60e87fc9c1d60fbb4c2205ccdbd5ef.jpg",
+      description: "Get any Frappuccino and receive a second one free. Valid at participating locations.",
+      code: "BOGOFREE24",
+      expiry: "June 30, 2024",
+      terms: "Valid only on grande or venti sizes. Not valid with other offers.",
+      content: `
+        <h2>Starbucks Summer Special</h2>
+        <p>Enjoy Starbucks' famous Frappuccinos with this amazing buy one get one free offer:</p>
+        <ul>
+          <li>Valid on all Frappuccino flavors</li>
+          <li>Participating locations only</li>
+          <li>Present code at checkout</li>
+          <li>Limit one offer per customer per visit</li>
+        </ul>
+        <p>This offer is perfect for trying new summer flavors like:</p>
+        <ul>
+          <li>Caramel Ribbon Crunch</li>
+          <li>Mocha Cookie Crumble</li>
+          <li>Strawberry Funnel Cake</li>
+        </ul>
+        <p>Offer expires June 30, 2024 or while supplies last.</p>
+      `,
+      tags: ["Coffee", "Beverage", "Summer Special"],
+      store: "Starbucks",
+      social: {
+        twitter: "https://twitter.com/Starbucks",
+        instagram: "https://instagram.com/starbucks"
+      },
+      related: [
+        { title: "20% Off All Pastries", url: "#" },
+        { title: "Free Refills for Rewards Members", url: "#" }
+      ]
+    }
+  },
+  {
+    category: "Food & Beverage",
+    details: {
+      title: "McDonald's: Free Medium Fries with Any Purchase",
+      image: "https://www.mcdonalds.com/content/dam/sites/usa/nfl/publication/1pub_Fries_Hero_1260x560.jpg",
+      description: "Get free medium fries with any purchase in the McDonald's app. Mobile only.",
+      code: "FREEFRIES",
+      expiry: "July 15, 2024",
+      terms: "Mobile order only. One offer per customer per day.",
+      content: `
+        <h2>Free Fries at McDonald's</h2>
+        <p>Download the McDonald's app and get free medium fries with any purchase:</p>
+        <ul>
+          <li>Must use mobile ordering</li>
+          <li>Valid on any purchase amount</li>
+          <li>World Famous Fries included</li>
+          <li>Participating US locations</li>
+        </ul>
+        <p>How to redeem:</p>
+        <ol>
+          <li>Download the McDonald's app</li>
+          <li>Create an account or sign in</li>
+          <li>Add any item to your cart</li>
+          <li>Apply promo code FREEFRIES</li>
+          <li>Complete your mobile order</li>
+        </ol>
+        <p>Offer valid through July 15, 2024.</p>
+      `,
+      tags: ["Fast Food", "Mobile App", "Free Item"],
+      store: "McDonald's",
+      social: {
+        twitter: "https://twitter.com/McDonalds",
+        facebook: "https://facebook.com/McDonalds"
+      },
+      related: [
+        { title: "$1 Any Size Soft Drink", url: "#" },
+        { title: "Breakfast Sandwich Combo Deal", url: "#" }
+      ]
+    }
+  },
+  
+  // Retail
+  {
+    category: "Retail",
+    details: {
+      title: "Amazon: 30% Off Select Electronics",
+      image: "https://m.media-amazon.com/images/I/71S5OpiaJZL._SL1500_.jpg",
+      description: "Save 30% on select electronics including headphones, smartwatches, and tablets.",
+      code: "ELECTRO30",
+      expiry: "May 31, 2024",
+      terms: "Valid on select items only. Limited quantities available.",
+      content: `
+        <h2>Amazon Electronics Sale</h2>
+        <p>Massive 30% discount on top electronics brands:</p>
+        <ul>
+          <li>Headphones from Sony, Bose, and JBL</li>
+          <li>Smartwatches including Apple Watch and Samsung Galaxy Watch</li>
+          <li>Tablets from Amazon Fire, Samsung, and Lenovo</li>
+        </ul>
+        <p>How to redeem:</p>
+        <ol>
+          <li>Add eligible items to your cart</li>
+          <li>Enter promo code ELECTRO30 at checkout</li>
+          <li>Discount will be applied automatically</li>
+        </ol>
+        <p>Featured deals:</p>
+        <table>
+          <tr>
+            <th>Item</th>
+            <th>Original Price</th>
+            <th>Discounted Price</th>
+          </tr>
+          <tr>
+            <td>Sony WH-1000XM5 Headphones</td>
+            <td>$399.99</td>
+            <td>$279.99</td>
+          </tr>
+          <tr>
+            <td>Apple Watch Series 9</td>
+            <td>$429.00</td>
+            <td>$300.30</td>
+          </tr>
+        </table>
+        <p>Offer ends May 31, 2024 or while supplies last.</p>
+      `,
+      tags: ["Electronics", "Amazon", "Discount"],
+      store: "Amazon",
+      social: {
+        twitter: "https://twitter.com/amazon",
+        facebook: "https://facebook.com/amazon"
+      },
+      related: [
+        { title: "Prime Member Exclusive Deals", url: "#" },
+        { title: "Back to School Tech Bundle", url: "#" }
+      ]
+    }
+  },
+  
+  // Travel
+  {
+    category: "Travel",
+    details: {
+      title: "Uber: 50% Off First 3 Rides (New Users)",
+      image: "https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_1899,h_804/v1613521692/assets/d9/ce6c00-32b0-4b93-9f0d-6f927d93da08/original/Rider_Home_bg_desktop2x.png",
+      description: "New users get 50% off their first 3 Uber rides up to $15 discount per ride.",
+      code: "UBER50NYSA",
+      expiry: "December 31, 2024",
+      terms: "New users only. Max $15 discount per ride. Valid in US only.",
+      content: `
+        <h2>Uber New User Discount</h2>
+        <p>Welcome to Uber! Enjoy 50% off your first 3 rides:</p>
+        <ul>
+          <li>New users only</li>
+          <li>Maximum $15 discount per ride</li>
+          <li>Valid on UberX, Uber Comfort, and UberXL</li>
+          <li>Available in all US cities where Uber operates</li>
+        </ul>
+        <p>How to redeem:</p>
+        <ol>
+          <li>Download the Uber app</li>
+          <li>Create a new account</li>
+          <li>Enter promo code UBER50NYSA in the Payments section</li>
+          <li>Request your ride as normal</li>
+          <li>Discount will be automatically applied</li>
+        </ol>
+        <p>This offer is perfect for:</p>
+        <ul>
+          <li>Airport transfers</li>
+          <li>Night out with friends</li>
+          <li>Commuting to work</li>
+          <li>Exploring new cities</li>
+        </ul>
+        <p>Offer valid through December 31, 2024.</p>
+      `,
+      tags: ["Transportation", "New User", "Discount"],
+      store: "Uber",
+      social: {
+        twitter: "https://twitter.com/uber",
+        instagram: "https://instagram.com/uber"
+      },
+      related: [
+        { title: "Uber Eats: $20 Off First Order", url: "#" },
+        { title: "Lyft: 25% Off 5 Rides", url: "#" }
+      ]
+    }
+  },
+  
+  // Entertainment
+  {
+    category: "Entertainment",
+    details: {
+      title: "AMC Theatres: $5 Ticket Tuesdays",
+      image: "https://www.amctheatres.com/media/v5/styles/utilities_generated/public/2023-06/AMC%20Theatres%20Hero%20Image%20Desktop%201600x500.jpg",
+      description: "Every Tuesday, enjoy any standard movie for just $5 at AMC locations.",
+      code: "TUESDAY5",
+      expiry: "Ongoing",
+      terms: "Standard shows only. Not valid on premium formats. One ticket per transaction.",
+      content: `
+        <h2>AMC $5 Tuesdays</h2>
+        <p>Enjoy movies at AMC Theatres every Tuesday for just $5:</p>
+        <ul>
+          <li>Any standard movie showing</li>
+          <li>All day every Tuesday</li>
+          <li>No minimum purchase required</li>
+          <li>Valid at all AMC locations nationwide</li>
+        </ul>
+        <p>How to redeem:</p>
+        <ol>
+          <li>Visit AMC website or app</li>
+          <li>Select any Tuesday showtime</li>
+          <li>Enter promo code TUESDAY5</li>
+          <li>Complete your ticket purchase</li>
+        </ol>
+        <p>Note: This offer is not valid for:</p>
+        <ul>
+          <li>IMAX, Dolby Cinema, or other premium formats</li>
+          <li>Special events or private screenings</li>
+          <li>Concessions or other purchases</li>
+        </ul>
+        <p>This is an ongoing promotion with no expiration date.</p>
+      `,
+      tags: ["Movies", "Theater", "Discount"],
+      store: "AMC Theatres",
+      social: {
+        twitter: "https://twitter.com/AMCTheatres",
+        facebook: "https://facebook.com/amctheatres"
+      },
+      related: [
+        { title: "AMC Stubs Membership Benefits", url: "#" },
+        { title: "Free Popcorn Wednesdays", url: "#" }
+      ]
+    }
+  },
+  
+  // Add more coupon articles as needed
+];
+
+// Function to show the coupon overlay
+function showCouponOverlay() {
+  let overlay = document.getElementById('couponOverlay');
+  if (!overlay) {
+    overlay = document.createElement('div');
+    overlay.id = 'couponOverlay';
+    overlay.className = 'coupon-overlay';
+    document.body.appendChild(overlay);
+  }
+
+  const categories = ['All', ...new Set(couponData.map(coupon => coupon.category))];
+
+  overlay.innerHTML = `
+    <div class="coupon-content">
+      <div class="coupon-header">
+        <h2>Nysa Coupons</h2>
+        <button class="close-coupon" onclick="hideCouponOverlay()">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      
+      <div class="coupon-filter-container">
+        <div class="coupon-filter-buttons">
+          ${categories.map(category => `
+            <button 
+              class="filter-button ${category === 'All' ? 'active' : ''}" 
+              data-category="${category}" 
+              onclick="filterCoupons('${category}')"
+            >
+              ${category}
+            </button>
+          `).join('')}
+        </div>
+      </div>
+
+      <div class="coupon-grid" id="couponGrid">
+        ${renderCouponCards(couponData)}
+      </div>
+    </div>
+
+    <div class="coupon-search-container">
+      <div class="input-container">
+        <input type="text" id="couponSearchInput" placeholder="Search for coupons, stores, or categories..." />
+        <button class="voice-search" id="couponVoiceSearchButton">
+          <i class="fas fa-microphone"></i>
+        </button>
+      </div>
+    </div>
+  `;
+
+  const searchInput = document.getElementById('couponSearchInput');
+  const couponGrid = document.getElementById('couponGrid');
+  const filterButtons = document.querySelectorAll('.filter-button');
+
+  const debouncedSearch = debounce((query) => {
+    performCouponSearch(couponData, query, couponGrid, filterButtons, renderCouponCards);
+  }, 300);
+
+  searchInput.addEventListener('input', (e) => {
+    debouncedSearch(e.target.value);
+  });
+
+  searchInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+      performCouponSearch(couponData, searchInput.value, couponGrid, filterButtons, renderCouponCards);
+    }
+  });
+
+  initializeCouponVoiceSearch(searchInput, (query) => {
+    performCouponSearch(couponData, query, couponGrid, filterButtons, renderCouponCards);
+  });
+
+  setTimeout(() => overlay.classList.add('active'), 10);
+
+  const style = document.createElement('style');
+  style.textContent = `
+    .coupon-overlay {
+      position: fixed;
+      top: 60px;
+      left: 0;
+      right: 0;
+      bottom: 60px;
+      background: #1a1a1f;
+      z-index: 1000;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+      overflow-y: auto;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+
+    .coupon-overlay::-webkit-scrollbar {
+      display: none;
+    }
+
+    .coupon-overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .coupon-content {
+      flex: 1;
+      width: 100%;
+      max-width: 100%;
+      padding: 20px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .coupon-header {
+      padding: 16px 24px;
+      background: rgba(26, 26, 31, 0.95);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 30;
+      border-bottom: 1px solid rgba(255, 215, 0, 0.15);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+
+    .coupon-header h2 {
+      color: var(--primary-color);
+      margin: 0;
+      font-size: 1.75em;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .coupon-header h2::before {
       content: '';
       display: inline-block;
       width: 24px;
@@ -12256,96 +14024,96 @@ function showNewsOverlay() {
       mask-size: contain;
     }
 
-  .close-news {
-  background: rgba(255, 255, 255, 0.1);
-  border: none;
-  color: white;
-  font-size: 1em;
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.2s ease;
-}
+    .close-coupon {
+      background: rgba(255, 255, 255, 0.1);
+      border: none;
+      color: white;
+      font-size: 1em;
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+    }
 
-.close-news:hover {
-  background: rgba(255, 255, 255, 0.2);
-  transform: scale(1.05);
-}
+    .close-coupon:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transform: scale(1.05);
+    }
 
-.close-news:active {
-  transform: scale(0.95);
-}
+    .close-coupon:active {
+      transform: scale(0.95);
+    }
 
-.news-filter-container {
-  position: fixed;
-  top: 72px;
-  left: 0;
-  right: 0;
-  width: 100%;
-  z-index: 10;
-  background: #1a1a1f;
-  padding: 12px 0;
-  box-sizing: border-box;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
-  border-bottom: 1px solid rgba(255, 215, 0, 0.1);
-}
+    .coupon-filter-container {
+      position: fixed;
+      top: 72px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      z-index: 10;
+      background: #1a1a1f;
+      padding: 12px 0;
+      box-sizing: border-box;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      border-bottom: 1px solid rgba(255, 215, 0, 0.1);
+    }
 
-.news-filter-container::-webkit-scrollbar {
-  display: none;
-}
+    .coupon-filter-container::-webkit-scrollbar {
+      display: none;
+    }
 
-.news-filter-buttons {
-  display: inline-flex;
-  padding: 0 16px;
-  gap: 8px;
-  white-space: nowrap;
-}
+    .coupon-filter-buttons {
+      display: inline-flex;
+      padding: 0 16px;
+      gap: 8px;
+      white-space: nowrap;
+    }
 
-.filter-button {
-  font-family: poppins;
-  flex-shrink: 0;
-  background: rgba(255, 215, 0, 0.1);
-  color: rgba(255, 255, 255, 0.9);
-  border: 1px solid rgba(255, 215, 0, 0.2);
-  padding: 10px 20px;
-  border-radius: 25px;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: 500;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  margin: 0;
-}
+    .filter-button {
+      font-family: poppins;
+      flex-shrink: 0;
+      background: rgba(255, 215, 0, 0.1);
+      color: rgba(255, 255, 255, 0.9);
+      border: 1px solid rgba(255, 215, 0, 0.2);
+      padding: 10px 20px;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 500;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin: 0;
+    }
 
-.filter-button:hover {
-  background: rgba(255, 215, 0, 0.15);
-  transform: scale(1.03);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
+    .filter-button:hover {
+      background: rgba(255, 215, 0, 0.15);
+      transform: scale(1.03);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
 
-.filter-button.active {
-  background: var(--primary-color);
-  color: #000;
-  font-weight: 600;
-  border-color: var(--primary-color);
-  box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3);
-}
+    .filter-button.active {
+      background: var(--primary-color);
+      color: #000;
+      font-weight: 600;
+      border-color: var(--primary-color);
+      box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3);
+    }
 
-/* Add some space at the end for better scrolling */
-.news-filter-buttons::after {
-  content: '';
-  display: block;
-  min-width: 16px;
-  height: 1px;
-}
+    /* Add some space at the end for better scrolling */
+    .coupon-filter-buttons::after {
+      content: '';
+      display: block;
+      min-width: 16px;
+      height: 1px;
+    }
 
-    .news-grid {
+    .coupon-grid {
       margin-top: 70px;
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
@@ -12355,32 +14123,33 @@ function showNewsOverlay() {
       width: 100%;
     }
 
-    .news-card {
+    .coupon-card {
       background: rgba(255, 255, 255, 0.05);
       border-radius: 16px;
       overflow: hidden;
       transition: all 0.3s ease;
       border: 1px solid rgba(255, 255, 255, 0.1);
       cursor: pointer;
+      position: relative;
     }
 
-    .news-card:hover {
+    .coupon-card:hover {
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
       border-color: rgba(255, 215, 0, 0.3);
     }
 
-    .news-card-image {
+    .coupon-card-image {
       width: 100%;
       height: 200px;
       object-fit: cover;
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
-    .news-card-content {
+    .coupon-card-content {
       padding: 20px;
     }
 
-    .news-card-category {
+    .coupon-card-category {
       display: inline-block;
       background: rgba(255, 215, 0, 0.1);
       color: var(--primary-color);
@@ -12391,7 +14160,7 @@ function showNewsOverlay() {
       margin-bottom: 12px;
     }
 
-    .news-card-title {
+    .coupon-card-title {
       font-size: 1.3em;
       font-weight: 700;
       margin: 0 0 10px 0;
@@ -12399,14 +14168,14 @@ function showNewsOverlay() {
       line-height: 1.3;
     }
 
-    .news-card-description {
+    .coupon-card-description {
       font-size: 0.95em;
       color: rgba(255, 255, 255, 0.8);
       margin: 0 0 15px 0;
       line-height: 1.5;
     }
 
-    .news-card-meta {
+    .coupon-card-meta {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -12414,17 +14183,54 @@ function showNewsOverlay() {
       color: rgba(255, 255, 255, 0.6);
     }
 
-    .news-card-author {
+    .coupon-card-store {
       font-weight: 500;
     }
 
-    .news-card-date {
+    .coupon-card-expiry {
       display: flex;
       align-items: center;
       gap: 5px;
     }
 
-    .news-search-container {
+    .coupon-code-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(255, 215, 0, 0.1);
+      border: 1px dashed rgba(255, 215, 0, 0.5);
+      padding: 10px 15px;
+      border-radius: 8px;
+      margin-top: 15px;
+    }
+
+    .coupon-code {
+      font-family: monospace;
+      font-size: 1.1em;
+      font-weight: bold;
+      color: var(--primary-color);
+    }
+
+    .copy-button {
+      background: var(--primary-color);
+      color: #000;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 4px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .copy-button:hover {
+      opacity: 0.9;
+    }
+
+    .copy-button:active {
+      transform: scale(0.95);
+    }
+
+    .coupon-search-container {
       position: fixed;
       bottom: 0px;
       left: 0;
@@ -12448,7 +14254,7 @@ function showNewsOverlay() {
       align-items: center;
     }
 
-    #newsSearchInput {
+    #couponSearchInput {
       flex: 1;
       background: rgba(255, 255, 255, 0.05);
       border: 1px solid rgba(255, 215, 0, 0.2);
@@ -12460,7 +14266,7 @@ function showNewsOverlay() {
       transition: border-color 0.3s ease;
     }
 
-    #newsSearchInput:focus {
+    #couponSearchInput:focus {
       border-color: rgba(255, 255, 255, 0.5);
     }
 
@@ -12496,34 +14302,34 @@ function showNewsOverlay() {
 
     /* Responsive Design */
     @media (max-width: 768px) {
-      .news-grid {
+      .coupon-grid {
         grid-template-columns: 1fr;
         padding: 0 10px;
         margin-top: 80px;
         gap: 15px;
       }
 
-      .news-card {
+      .coupon-card {
         width: 100%;
         margin: 0;
       }
 
-      .news-card-image {
+      .coupon-card-image {
         height: 180px;
       }
 
-      .news-content {
+      .coupon-content {
         padding: 10px 0;
         padding-bottom: 200px;
       }
 
-      #newsSearchInput {
+      #couponSearchInput {
         padding: 20px 20px;
       }
     }
 
     @media (min-width: 769px) {
-      .news-search-container {
+      .coupon-search-container {
         padding: 24px;
         bottom: 0px;
       }
@@ -12533,7 +14339,7 @@ function showNewsOverlay() {
         margin: 0 auto;
       }
 
-      #newsSearchInput {
+      #couponSearchInput {
         height: 80px;
         font-size: 1.05rem;
         padding: 0 50px 0 24px;
@@ -12550,7 +14356,7 @@ function showNewsOverlay() {
         font-size: 2.1em;
       }
 
-      .news-grid {
+      .coupon-grid {
         padding-bottom: 180px;
       }
     }
@@ -12558,96 +14364,113 @@ function showNewsOverlay() {
   document.head.appendChild(style);
 }
 
-function renderNewsCards(filteredData) {
-  return filteredData.map(article => `
-    <div class="news-card" onclick="openNewsArticle('${article.category}', '${article.details.title.replace(/'/g, "\\'")}')">
-      <img src="${article.details.image}" alt="${article.details.title}" class="news-card-image">
-      <div class="news-card-content">
-        <span class="news-card-category">${article.category}</span>
-        <h3 class="news-card-title">${article.details.title}</h3>
-        <p class="news-card-description">${article.details.description}</p>
-        <div class="news-card-meta">
-          <span class="news-card-author">By ${article.details.author}</span>
-          <span class="news-card-date">
-            <i class="far fa-calendar-alt"></i> ${article.details.date} • ${article.details.readTime}
+function renderCouponCards(filteredData) {
+  return filteredData.map(coupon => `
+    <div class="coupon-card" onclick="openCouponDetail('${coupon.category}', '${coupon.details.title.replace(/'/g, "\\'")}')">
+      <img src="${coupon.details.image}" alt="${coupon.details.title}" class="coupon-card-image">
+      <div class="coupon-card-content">
+        <span class="coupon-card-category">${coupon.category}</span>
+        <h3 class="coupon-card-title">${coupon.details.title}</h3>
+        <p class="coupon-card-description">${coupon.details.description}</p>
+        <div class="coupon-card-meta">
+          <span class="coupon-card-store">${coupon.details.store}</span>
+          <span class="coupon-card-expiry">
+            <i class="far fa-clock"></i> Expires: ${coupon.details.expiry}
           </span>
+        </div>
+        <div class="coupon-code-container">
+          <span class="coupon-code">${coupon.details.code}</span>
+          <button class="copy-button" onclick="event.stopPropagation(); copyCouponCode('${coupon.details.code}')">
+            Copy Code
+          </button>
         </div>
       </div>
     </div>
   `).join('');
 }
 
-function openNewsArticle(category, title) {
-  const article = newsData.find(item => 
+function openCouponDetail(category, title) {
+  const coupon = couponData.find(item => 
     item.category === category && item.details.title === title.replace(/\\'/g, "'")
   );
   
-  if (!article) return;
+  if (!coupon) return;
 
-  const articlePage = document.createElement('div');
-  articlePage.className = 'news-article-page';
-  articlePage.innerHTML = `
-    <div class="news-article-header">
-      <button class="back-button" onclick="closeNewsArticle()">
+  const couponPage = document.createElement('div');
+  couponPage.className = 'coupon-detail-page';
+  couponPage.innerHTML = `
+    <div class="coupon-detail-header">
+      <button class="back-button" onclick="closeCouponDetail()">
         <i class="fas fa-arrow-left"></i>
       </button>
       <div class="header-actions">
-        <button class="share-button" onclick="shareArticle('${article.details.title.replace(/'/g, "\\'")}')">
+        <button class="share-button" onclick="shareCoupon('${coupon.details.title.replace(/'/g, "\\'")}', '${coupon.details.code}')">
           <i class="fas fa-share"></i>
         </button>
       </div>
     </div>
     
-    <div class="article-hero">
+    <div class="coupon-hero">
       <div class="hero-gradient"></div>
-      <img src="${article.details.image}" alt="${article.details.title}" class="hero-image">
+      <img src="${coupon.details.image}" alt="${coupon.details.title}" class="hero-image">
       <div class="hero-content">
-        <div class="article-category">${article.category}</div>
-        <h1>${article.details.title}</h1>
-        <div class="article-meta">
-          <div class="author-info">
-            <span>By ${article.details.author}</span>
+        <div class="coupon-category">${coupon.category}</div>
+        <h1>${coupon.details.title}</h1>
+        <div class="coupon-meta">
+          <div class="store-info">
+            <span>${coupon.details.store}</span>
             <span class="meta-divider">•</span>
-            <span>${article.details.date}</span>
-            <span class="meta-divider">•</span>
-            <span>${article.details.readTime}</span>
+            <span>Expires: ${coupon.details.expiry}</span>
           </div>
         </div>
       </div>
     </div>
     
-    <div class="article-content-container">
-      <div class="article-content">
-        ${article.details.content}
+    <div class="coupon-content-container">
+      <div class="coupon-code-detail">
+        <div class="code-display">
+          <span>CODE: </span>
+          <strong>${coupon.details.code}</strong>
+        </div>
+        <button class="copy-button-large" onclick="copyCouponCode('${coupon.details.code}')">
+          Copy Code
+        </button>
       </div>
       
-      <div class="article-footer">
+      <div class="coupon-content">
+        ${coupon.details.content}
+      </div>
+      
+      <div class="terms-container">
+        <h3>Terms & Conditions</h3>
+        <p>${coupon.details.terms}</p>
+      </div>
+      
+      <div class="coupon-footer">
         <div class="tags-container">
-          ${article.details.tags.map(tag => `
+          ${coupon.details.tags.map(tag => `
             <span class="tag">${tag}</span>
           `).join('')}
         </div>
         
-        <div class="source-info">
-          <span>Source: ${article.details.source}</span>
-          <div class="social-links">
-            ${article.details.social?.twitter ? `<a href="${article.details.social.twitter}" target="_blank"><i class="fab fa-twitter"></i></a>` : ''}
-            ${article.details.social?.facebook ? `<a href="${article.details.social.facebook}" target="_blank"><i class="fab fa-facebook-f"></i></a>` : ''}
-            ${article.details.social?.linkedin ? `<a href="${article.details.social.linkedin}" target="_blank"><i class="fab fa-linkedin-in"></i></a>` : ''}
-            ${article.details.social?.instagram ? `<a href="${article.details.social.instagram}" target="_blank"><i class="fab fa-instagram"></i></a>` : ''}
+        <div class="source-coupon">
+          <div class="social-coupon">
+            ${coupon.details.social?.twitter ? `<a href="${coupon.details.social.twitter}" target="_blank"><i class="fab fa-twitter"></i></a>` : ''}
+            ${coupon.details.social?.facebook ? `<a href="${coupon.details.social.facebook}" target="_blank"><i class="fab fa-facebook-f"></i></a>` : ''}
+            ${coupon.details.social?.instagram ? `<a href="${coupon.details.social.instagram}" target="_blank"><i class="fab fa-instagram"></i></a>` : ''}
           </div>
         </div>
       </div>
     </div>
   `;
 
-  document.body.appendChild(articlePage);
-  addNewsArticleStyles();
+  document.body.appendChild(couponPage);
+  addCouponDetailStyles();
   scrollToTop();
   
   // Add scroll effect for header
-  const header = document.querySelector('.news-article-header');
-  const hero = document.querySelector('.article-hero');
+  const header = document.querySelector('.coupon-detail-header');
+  const hero = document.querySelector('.coupon-hero');
   
   if (header && hero) {
     const heroHeight = hero.offsetHeight;
@@ -12662,10 +14485,10 @@ function openNewsArticle(category, title) {
   }
 }
 
-function addNewsArticleStyles() {
+function addCouponDetailStyles() {
   const style = document.createElement('style');
   style.textContent = `
-    .news-article-page {
+    .coupon-detail-page {
       position: fixed;
       top: 0;
       left: 0;
@@ -12679,7 +14502,7 @@ function addNewsArticleStyles() {
       line-height: 1.6;
     }
 
-    .news-article-header {
+    .coupon-detail-header {
       position: fixed;
       top: 0;
       left: 0;
@@ -12693,7 +14516,7 @@ function addNewsArticleStyles() {
       transition: all 0.3s ease;
     }
 
-    .news-article-header.scrolled {
+    .coupon-detail-header.scrolled {
       background: rgba(255, 255, 255, 0.98);
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
       border-bottom: 1px solid rgba(0, 0, 0, 0.05);
@@ -12715,7 +14538,7 @@ function addNewsArticleStyles() {
       -webkit-backdrop-filter: blur(5px);
     }
 
-    .news-article-header.scrolled .back-button {
+    .coupon-detail-header.scrolled .back-button {
       background: rgba(0, 0, 0, 0.05);
       color: #333;
     }
@@ -12745,7 +14568,7 @@ function addNewsArticleStyles() {
       -webkit-backdrop-filter: blur(5px);
     }
 
-    .news-article-header.scrolled .share-button {
+    .coupon-detail-header.scrolled .share-button {
       background: rgba(0, 0, 0, 0.05);
       color: #333;
     }
@@ -12754,7 +14577,7 @@ function addNewsArticleStyles() {
       transform: scale(1.1);
     }
 
-    .article-hero {
+    .coupon-hero {
       position: relative;
       width: 100%;
       height: 70vh;
@@ -12796,7 +14619,7 @@ function addNewsArticleStyles() {
       box-sizing: border-box;
     }
 
-    .article-category {
+    .coupon-category {
       display: inline-block;
       background: rgba(255, 215, 0, 0.9);
       color: #111;
@@ -12817,14 +14640,14 @@ function addNewsArticleStyles() {
       text-shadow: 0 2px 10px rgba(0,0,0,0.3);
     }
 
-    .article-meta {
+    .coupon-meta {
       display: flex;
       align-items: center;
       font-size: 0.95em;
       color: rgba(255,255,255,0.9);
     }
 
-    .author-info {
+    .store-info {
       display: flex;
       align-items: center;
       flex-wrap: wrap;
@@ -12835,7 +14658,7 @@ function addNewsArticleStyles() {
       opacity: 0.7;
     }
 
-    .article-content-container {
+    .coupon-content-container {
       max-width: 800px;
       margin: 0 auto;
       padding: 60px 20px;
@@ -12846,14 +14669,55 @@ function addNewsArticleStyles() {
       z-index: 5;
     }
 
-    .article-content {
+    .coupon-code-detail {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(255, 215, 0, 0.1);
+      border: 2px dashed rgba(255, 215, 0, 0.5);
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 30px;
+    }
+
+    .code-display {
+      font-size: 1.2em;
+      color: #fff;
+    }
+
+    .code-display strong {
+      color: var(--primary-color);
+      font-size: 1.4em;
+    }
+
+    .copy-button-large {
+      background: var(--primary-color);
+      color: #000;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-size: 1em;
+    }
+
+    .copy-button-large:hover {
+      opacity: 0.9;
+    }
+
+    .copy-button-large:active {
+      transform: scale(0.95);
+    }
+
+    .coupon-content {
       margin: 0px;
       font-size: 1.1em;
       line-height: 1.8;
       color: #fff;
     }
 
-    .article-content h2 {
+    .coupon-content h2 {
       font-size: 1.8em;
       margin: 1.5em 0 0.8em;
       margin-top: 0px;
@@ -12861,20 +14725,20 @@ function addNewsArticleStyles() {
       color: #fff;
     }
 
-    .article-content p {
+    .coupon-content p {
       margin-bottom: 1.5em;
     }
 
-    .article-content ul, .article-content ol {
+    .coupon-content ul, .coupon-content ol {
       margin-bottom: 1.5em;
       padding-left: 1.5em;
     }
 
-    .article-content li {
+    .coupon-content li {
       margin-bottom: 0.5em;
     }
 
-    .article-content blockquote {
+    .coupon-content blockquote {
       border-left: 4px solid #ffd700;
       padding: 15px 20px;
       margin: 2em 0;
@@ -12883,49 +14747,51 @@ function addNewsArticleStyles() {
       color: #555;
     }
 
-    .article-content table {
+    .coupon-content table {
       width: 100%;
       border-collapse: collapse;
       margin: 2em 0;
       box-shadow: 0 2px 15px rgba(0,0,0,0.05);
     }
 
-    .article-content th, .article-content td {
+    .coupon-content th, .coupon-content td {
       padding: 12px 15px;
       text-align: left;
       border-bottom: 1px solid #eee;
     }
 
-    .article-content th {
+    .coupon-content th {
       background: #f5f5f5;
       font-weight: 600;
       color: #333;
     }
 
-    .article-content tr:hover {
-      background: #fafafa;
+    .coupon-content tr:hover {
+      background: #000;
     }
 
-    .video-container {
-      position: relative;
-      padding-bottom: 56.25%;
-      height: 0;
-      overflow: hidden;
-      margin: 2em 0;
+    .terms-container {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 20px;
       border-radius: 8px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      margin-top: 40px;
+      margin-bottom: 20px;
     }
 
-    .video-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: none;
+    .terms-container h3 {
+      color: var(--primary-color);
+      margin-top: 0;
+      margin-bottom: 15px;
     }
 
-    .article-footer {
+    .terms-container p {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.9em;
+      line-height: 1.6;
+      margin-bottom: 0;
+    }
+
+    .coupon-footer {
       margin-top: 60px;
     }
 
@@ -12937,49 +14803,49 @@ function addNewsArticleStyles() {
     }
 
     .tag {
-      background: #f0f0f0;
+      background: rgba(255, 215, 0, 0.1);
       padding: 8px 15px;
       border-radius: 20px;
       font-size: 0.85em;
-      color: #555;
+      color: var(--primary-color);
       transition: all 0.3s ease;
+      border: 1px solid rgba(255, 215, 0, 0.3);
     }
 
     .tag:hover {
-      background: #ffd700;
+      background: var(--primary-color);
       color: #111;
     }
 
-    .source-info {
+    .source-coupon {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
+      justify-content: flex-end;
       padding: 20px 0;
-      border-top: 1px solid #eee;
-      border-bottom: 1px solid #eee;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
       margin-bottom: 0px;
       font-size: 0.9em;
       color: #fff;
     }
 
-    .social-links {
+    .social-coupon {
       display: flex;
       gap: 15px;
     }
 
-    .social-links a {
-      color: #ffd700;
+    .social-coupon a {
+      color: var(--primary-color);
       transition: all 0.3s ease;
+      font-size: 1.2em;
     }
 
-    .social-links a:hover {
+    .social-coupon a:hover {
       color: #fff;
       transform: scale(1.1);
     }
 
     /* Responsive Design */
     @media (max-width: 768px) {
-      .article-hero {
+      .coupon-hero {
         height: 60vh;
         min-height: 400px;
       }
@@ -12992,23 +14858,34 @@ function addNewsArticleStyles() {
         font-size: 2.2em;
       }
       
-      .article-content-container {
+      .coupon-content-container {
         padding: 40px 15px;
         margin-top: -20px;
         border-radius: 20px 20px 0 0;
       }
       
-      .article-content {
+      .coupon-content {
         font-size: 1em;
       }
       
-      .article-content h2 {
+      .coupon-content h2 {
         font-size: 1.5em;
+      }
+
+      .coupon-code-detail {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+      }
+
+      .terms-container {
+        margin-top: 30px;
+        padding: 15px;
       }
     }
 
     @media (max-width: 480px) {
-      .article-hero {
+      .coupon-hero {
         height: 50vh;
         min-height: 300px;
       }
@@ -13017,65 +14894,107 @@ function addNewsArticleStyles() {
         font-size: 1.8em;
       }
       
-      .article-meta {
+      .coupon-meta {
         font-size: 0.85em;
       }
       
-      .article-content-container {
+      .coupon-content-container {
         padding: 30px 15px;
       }
+
+      .source-coupon {
+      margin-bottom: -90px;
     }
+
+      .terms-container {
+        margin-top: -200px;
+      }
+    }
+
   `;
   document.head.appendChild(style);
 }
 
-function closeNewsArticle() {
-  const articlePage = document.querySelector('.news-article-page');
-  if (articlePage) {
-    articlePage.remove();
+function closeCouponDetail() {
+  const couponPage = document.querySelector('.coupon-detail-page');
+  if (couponPage) {
+    // Remove all style elements that were added for the detail page
+    const styleElements = document.querySelectorAll('style');
+    styleElements.forEach(style => {
+      if (style.textContent.includes('.coupon-detail-page') || 
+          style.textContent.includes('.coupon-detail-header')) {
+        style.remove();
+      }
+    });
+    
+    couponPage.remove();
   }
 }
 
-function shareArticle(title) {
+function shareCoupon(title, code) {
   if (navigator.share) {
     navigator.share({
       title: title,
-      text: 'Check out this interesting article!',
+      text: `Check out this coupon: ${code}`,
       url: window.location.href,
     }).catch(err => {
       console.log('Error sharing:', err);
     });
   } else {
     // Fallback for browsers that don't support Web Share API
-    const shareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(window.location.href)}`;
+    const shareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(title + " - Use code: " + code)}&url=${encodeURIComponent(window.location.href)}`;
     window.open(shareUrl, '_blank');
   }
 }
 
-function openRelatedArticle(title) {
-  // In a real app, you would fetch the related article
-  console.log(`Opening related article: ${title}`);
-  // For demo purposes, we'll just show an alert
-  alert(`This would open the article: "${title}" in a real application.`);
+function copyCouponCode(code) {
+  navigator.clipboard.writeText(code).then(() => {
+    // Show copied notification
+    const notification = document.createElement('div');
+    notification.className = 'copy-notification';
+    notification.textContent = 'Copied to clipboard!';
+    document.body.appendChild(notification);
+    
+    setTimeout(() => {
+      notification.classList.add('show');
+    }, 10);
+    
+    setTimeout(() => {
+      notification.classList.remove('show');
+      setTimeout(() => notification.remove(), 300);
+    }, 2000);
+  }).catch(err => {
+    console.error('Failed to copy: ', err);
+    // Fallback for browsers that don't support clipboard API
+    const textarea = document.createElement('textarea');
+    textarea.value = code;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textarea);
+    
+    // Show fallback notification
+    alert('Coupon code copied to clipboard!');
+  });
 }
 
-function hideNewsOverlay() {
-  const overlay = document.getElementById('newsOverlay');
+function hideCouponOverlay() {
+  const overlay = document.getElementById('couponOverlay');
   if (overlay) {
     overlay.classList.remove('active');
     setTimeout(() => overlay.remove(), 300);
   }
 }
 
-function filterNews(category) {
-  const newsGrid = document.getElementById('newsGrid');
-  let filteredData = newsData;
+function filterCoupons(category) {
+  const couponGrid = document.getElementById('couponGrid');
+  let filteredData = couponData;
 
   if (category !== 'All') {
-    filteredData = filteredData.filter(article => article.category === category);
+    filteredData = filteredData.filter(coupon => coupon.category === category);
   }
 
-  newsGrid.innerHTML = renderNewsCards(filteredData);
+  couponGrid.innerHTML = renderCouponCards(filteredData);
 
   const filterButtons = document.querySelectorAll('.filter-button');
   filterButtons.forEach(button => {
@@ -13087,31 +15006,32 @@ function filterNews(category) {
   });
 }
 
-function performNewsSearch(data, query, gridElement, filterButtons, renderFunction) {
+function performCouponSearch(data, query, gridElement, filterButtons, renderFunction) {
   if (!query) {
-    // If no query, show all news
+    // If no query, show all coupons
     gridElement.innerHTML = renderFunction(data);
     return;
   }
 
   const lowerCaseQuery = query.toLowerCase();
-  const filteredData = data.filter(article => {
+  const filteredData = data.filter(coupon => {
     return (
-      article.details.title.toLowerCase().includes(lowerCaseQuery) ||
-      article.details.description.toLowerCase().includes(lowerCaseQuery) ||
-      article.details.author.toLowerCase().includes(lowerCaseQuery) ||
-      article.category.toLowerCase().includes(lowerCaseQuery) ||
-      (article.details.tags && article.details.tags.some(tag => tag.toLowerCase().includes(lowerCaseQuery)))
+      coupon.details.title.toLowerCase().includes(lowerCaseQuery) ||
+      coupon.details.description.toLowerCase().includes(lowerCaseQuery) ||
+      coupon.details.store.toLowerCase().includes(lowerCaseQuery) ||
+      coupon.category.toLowerCase().includes(lowerCaseQuery) ||
+      coupon.details.code.toLowerCase().includes(lowerCaseQuery) ||
+      (coupon.details.tags && coupon.details.tags.some(tag => tag.toLowerCase().includes(lowerCaseQuery)))
     );
   });
 
   gridElement.innerHTML = filteredData.length > 0 
     ? renderFunction(filteredData)
-    : '<div class="no-results">No news articles found matching your search.</div>';
+    : '<div class="no-results">No coupons found matching your search.</div>';
 }
 
-function initializeNewsVoiceSearch(inputElement, callback) {
-  const voiceButton = document.getElementById('newsVoiceSearchButton');
+function initializeCouponVoiceSearch(inputElement, callback) {
+  const voiceButton = document.getElementById('couponVoiceSearchButton');
   if (!voiceButton) return;
 
   let recognition;
@@ -13161,17 +15081,49 @@ function debounce(func, wait) {
   };
 }
 
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
 document.addEventListener('DOMContentLoaded', function() {
-  // Get the news button element
-  const newsButton = document.getElementById('newsButton');
+  // Get the coupon button element
+  const couponButton = document.getElementById('couponButton');
   
   // Add click event listener
-  if (newsButton) {
-    newsButton.addEventListener('click', function(e) {
-      e.preventDefault(); // Prevent default behavior if needed
-      showNewsOverlay(); // This opens the news feed
+  if (couponButton) {
+    couponButton.addEventListener('click', function(e) {
+      e.preventDefault();
+      showCouponOverlay();
     });
   }
+  
+  // Add copy notification styles
+  const copyNotificationStyle = document.createElement('style');
+  copyNotificationStyle.textContent = `
+    .copy-notification {
+      position: fixed;
+      bottom: 100px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 12px 24px;
+      border-radius: 25px;
+      font-size: 0.9em;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      z-index: 3000;
+      pointer-events: none;
+    }
+    
+    .copy-notification.show {
+      opacity: 1;
+    }
+  `;
+  document.head.appendChild(copyNotificationStyle);
 });
 
 const locatorsData = [
@@ -14242,6 +16194,12 @@ function generateLocatorSearchSuggestions(query, locators) {
   display: block;
   min-width: 16px;
   height: 1px;
+}
+
+@media (min-width: 1024px) {
+   .locators-filter-container {
+   top: 72px;
+    }
 }
 
 .locators-grid {
@@ -19995,6 +21953,12 @@ function generatePlaceSearchSuggestions(query, places) {
   height: 1px;
 }
 
+@media (min-width: 1024px) {
+   .places-filter-container {
+   top: 72px;
+    }
+}
+
 .places-grid {
   margin-top: 90px;
   display: grid;
@@ -20776,6 +22740,18 @@ function generatePlaceSearchSuggestions(query, places) {
 .close-full-screen:hover {
   background: rgba(255, 255, 255, 0.2);
   transform: scale(1.1);
+}
+
+@media (min-width: 1024px) {
+.place-name {
+  font-size: 18px;
+  }
+}
+
+@media (min-width: 1440px) {
+.place-name {
+  font-size: 18px;
+  }
 }
 
 /* No Results State */
@@ -24331,6 +26307,12 @@ function generateSearchSuggestions(query, providers) {
   height: 1px;
 }
 
+@media (min-width: 1024px) {
+   .providers-filter-container {
+   top: 72px;
+    }
+}
+
 .providers-grid {
   margin-top: 90px;
   display: grid;
@@ -27376,6 +29358,60 @@ function addProviderPageStyles() {
     padding: 16px;
   }
 }
+
+@media (min-width: 1024px) {
+.provider-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 0 120px;
+  }
+  
+.provider-image-carousel {
+    height: 350px;
+    border-radius: 20px;
+  }
+    
+  .social-links {
+    gap: 18px;
+  }
+  
+  .social-link {
+    width: 44px;
+    height: 44px;
+    font-size: 1.3em;
+  }
+  
+  .provider-actions {
+    max-width: 700px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px 20px 0 0; /* This curves only the top corners */
+  }
+  
+  .primary-action,
+  .secondary-action {
+    padding: 16px;
+    font-size: 1.05em;
+  }
+}
+
+@media (min-width: 1440px) {
+.provider-content {
+    max-width: 1000px;
+  }
+    
+.provider-image-carousel {
+    height: 400px;
+  }
+    
+  .provider-actions {
+    border-radius: 12px 12px 0 0; /* This curves only the top corners */
+    max-width: 800px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
   `;
   document.head.appendChild(style);
 }
@@ -28472,6 +30508,12 @@ function generateRealEstateSearchSuggestions(query, properties) {
   display: block;
   min-width: 16px;
   height: 1px;
+}
+
+@media (min-width: 1024px) {
+.real-estate-filter-container {
+   top: 72px;
+    }
 }
 
 .real-estate-grid {
