@@ -22114,7 +22114,7 @@ function generatePlaceSearchSuggestions(query, places) {
   border-bottom: none;
 }
 
-.place-name {
+.metro-name {
   font-family: poppins;
   font-size: 18px;
   font-weight: 600;
@@ -22346,7 +22346,7 @@ function generatePlaceSearchSuggestions(query, places) {
     padding: 14px;
   }
   
-  .place-name {
+  .metro-name {
     font-size: 16px;
   }
   
@@ -22482,7 +22482,7 @@ function generatePlaceSearchSuggestions(query, places) {
     background: #fff;
   }
   
-  .place-name {
+  .metro-name {
     color: #000;
   }
   
@@ -22743,13 +22743,13 @@ function generatePlaceSearchSuggestions(query, places) {
 }
 
 @media (min-width: 1024px) {
-.place-name {
+.metro-name {
   font-size: 18px;
   }
 }
 
 @media (min-width: 1440px) {
-.place-name {
+.metro-name {
   font-size: 18px;
   }
 }
@@ -22854,7 +22854,7 @@ function renderPlaceCards(filteredData) {
         <div class="place-card-content">
           <div class="place-card-header">
             <div style="display: flex; justify-content: space-between; align-items: flex-start;">
-              <h3 class="place-name">${place.details.name}</h3>
+              <h3 class="metro-name">${place.details.name}</h3>
               <div class="place-rating">
                 <span class="star">${place.details.rating || '4.0'} ★</span>
               </div>
